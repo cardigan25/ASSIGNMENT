@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Login</h1>
+  <form action="/login" method="post">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+    <br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required minlength="8">
+    <br>
+    <button type="submit">Login</button>
+  </form>
+  <script>
+    function validateForm() 
+    {
+      const username=document.getElementById('username');
+      const password=document.getElementById('password');
+      if (username.value.trim()===''||password.value.trim()==='') 
+      {
+        alert('Please enter a username and password.');
+        return false;
+      }
+      if (password.value.length<8) 
+      {
+        alert('Password must be at least 8 characters long.');
+        return false;
+      }
+      return true;
+    }
+    document.querySelector('form').addEventListener('submit', validateForm);
+  </script>
+</body>
+</html>

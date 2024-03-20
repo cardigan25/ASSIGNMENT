@@ -1,0 +1,13 @@
+create database ADMINISTRATOR;
+use ADMINISTRATOR;
+create table PRODUCT (PRODUCT_ID int primary key IDENTITY(1,1),PRODUCT_NAME varchar(255) NOT NULL,CATEGORY varchar(255),PRICE decimal(10,2) NOT NULL);
+insert into PRODUCT (PRODUCT_NAME,CATEGORY,PRICE) values ('T-Shirt','Clothing',150),('Laptop','Electronics',50000),('Pen','Stationery',10),('Headphones','Electronics',800);
+insert into PRODUCT (PRODUCT_NAME,PRICE) values ('Book',1500);
+select * from PRODUCT;
+select * from PRODUCT where PRICE>100;
+select * from PRODUCT where CATEGORY='Electronics';
+select * from PRODUCT where category LIKE '%on%';
+select count(*) as TOTAL_PRODUCTS from PRODUCT;
+select avg(PRICE) as AVG_PRICE from PRODUCT;
+select sum(PRICE) as AVG_PRICE from PRODUCT;
+select max(PRICE) as MOST_EXPENSIVE_PRODUCT,min(PRICE) as CHEAPEST_PRODUCT from PRODUCT;

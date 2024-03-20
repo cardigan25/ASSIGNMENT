@@ -1,0 +1,33 @@
+body 
+{
+    font-family:sans-serif;
+}
+h1 
+{
+    text-align:center;
+}
+form 
+{
+    width:300px;
+    margin:auto;
+}
+input 
+{
+    width:100%;
+    padding:10px;
+    margin-bottom:20px;
+}
+button 
+{
+    width:322px;
+    padding:10px;
+    margin-bottom:10px;
+}
+button 
+{
+    background-color:#34ca0f;
+    color:#fff;
+    padding:10px;
+    border:none;
+    cursor:pointer;
+}
