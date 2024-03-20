@@ -9,5 +9,5 @@ select * from PRODUCT where CATEGORY='Electronics';
 select * from PRODUCT where category LIKE '%on%';
 select count(*) as TOTAL_PRODUCTS from PRODUCT;
 select avg(PRICE) as AVG_PRICE from PRODUCT;
-select sum(PRICE) as AVG_PRICE from PRODUCT;
+select sum(PRICE) as TOTAL_PRICE from PRODUCT;
 select max(PRICE) as MOST_EXPENSIVE_PRODUCT,min(PRICE) as CHEAPEST_PRODUCT from PRODUCT;
